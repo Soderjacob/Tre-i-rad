@@ -8,13 +8,13 @@ public class Main {
         Player user2 = new Player('O');
         Rules gameOver = new Rules();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Dags för luffarschack! För att börja spela skriv spela, för att avsluta spelet skriv \"exit\"");
+        System.out.println("Time to play some Tic Tac Toe! Place a move by typing a number between 1-9. To start playing type play, to end the game type \"exit\"");
 
         while (!scanner.nextLine().equalsIgnoreCase("exit")) {
 
             board.playBoard();
             playRound(user1, scanner, board, gameOver, user2);
-            System.out.println("Dags för luffarschack! För att börja spela skriv spela, för att avsluta spelet skriv \"exit\"");
+            System.out.println("Time to play some Tic Tac Toe! Place a move by typing a number between 1-9. To start playing type play, to end the game type \"exit\"");
 
         }
 
