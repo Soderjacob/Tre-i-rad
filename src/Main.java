@@ -24,6 +24,7 @@ public class Main {
         while (true) {
             user1.move(scanner, board);
             if (gameOver.checkWinner(board, user1.getUser())) {
+                board.clearBoard(' ');
                 break;
             }
 
@@ -31,6 +32,7 @@ public class Main {
 
             user2.move(scanner, board);
             if (gameOver.checkWinner(board, user2.getUser())) {
+                board.clearBoard(' ');
                 break;
             }
 
